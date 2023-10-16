@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./Components/Login/Login";
+// import RoutePaths from "./Components/RoutePaths/RoutePaths";
+import {Routes,Route, NavLink} from 'react-router-dom'
+import Products from "./Components/Products/Products";
+import { useState } from "react";
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false)
+
+  
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/products" element={<Products />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <NavLink   className={'login'} to={'/login'}>Login</NavLink>
     </div>
   );
 }

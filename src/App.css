@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+.login {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  transition: 0.3s;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+.login:hover {
+  transition: 0.3s;
+  background-color: grey;
+  
+}
+/* .hidden_login {
+  color: white;
+  background-color: white;
+  text-decoration: none;
+} */

@@ -1,0 +1,41 @@
+.login-form {
+    background-color: #ffffff;
+    width: 500px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.1);
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  /* margin: s; */
+}
+.submit-button {
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    position: absolute;
+    /* top: 10%; */
+    transform: translate(-50px, 30px);
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    
+}
+.submit-button:hover {
+    transition: 0.3s;
+    background-color: gray;
+}
+.field {
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.error {
+    color: red;
+}
